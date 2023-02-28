@@ -56,3 +56,28 @@ closeButton.addEventListener("click", () => {
   modal.classList.toggle("hidden");
   overlay.classList.toggle("hidden");
 });
+
+// Modal form swithc from LOGIN to SIGN UP;
+const formLogin = document.querySelector(".m-form");
+const formSignup = document.querySelector(".m-form-s");
+const signButtonMform = document.querySelector("#radio2");
+const loginButtonMform = document.querySelector("#radio1");
+const notAmember = document.querySelector(".m-not");
+
+// const stopEvent = function () {
+//   signButtonMform.removeEventListener("click");
+// };
+
+const formToggle = function () {
+  formSignup.classList.toggle("hidden");
+  formLogin.classList.toggle("hidden");
+  signButtonMform.removeEventListener("click", formToggle);
+  loginButtonMform.addEventListener("click", formToggle);
+  if (loginButtonMform.checked) {
+    loginButtonMform.removeEventListener("click", formToggle);
+    signButtonMform.addEventListener("click", formToggle);
+  }
+};
+
+signButtonMform.addEventListener("click", formToggle);
+notAmember.addEventListener("click", () => signButtonMform.click());

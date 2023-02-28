@@ -91,7 +91,7 @@
           <h5 class="header-footer">Contact us</h5>
           <form class="footer-section form">
             <input type="text" id="fname" name="fname" placeholder="Full name..." required>
-            <input type="email" id="email" name="email" placeholder="E-mail..." required>
+            <input type="email" id="e_mail" name="email" placeholder="E-mail..." required>
             <textarea type="text" id="message" name="message" placeholder="Type your message to us..."></textarea>
             <input class="submit" type="submit" value="Submit">            
           </form>          
@@ -119,18 +119,24 @@
           <button class="close-modal">&times;</button>
           <img class="m-img" src="pics/Modal.png" alt="bike gold bridge">
           <div class="m-log-sign-switch">
-            <input class="r1" id="1" type="radio" name="checker" checked>                    
-            <label class="lebel" id="m-login" for="1">Login</label>  
-            <input class="r1" id="2" type="radio" name="checker">             
-            <label class="lebel" id="m-signup" for="2">Sign Up</label>
+            <input class="r1" id="radio1" type="radio" name="checker" checked>                    
+            <label class="lebel" id="m-login" for="radio1">Login</label>  
+            <input class="r1" id="radio2" type="radio" name="checker">             
+            <label class="lebel" id="m-signup" for="radio2">Sign Up</label>
           </div>
           <div class="form_container">
-            <form class="m-form ">
+            <form class="m-form">
               <input type="email" id="email" name="fullname" placeholder="E-mail..." required><br>
               <input type="password" id="pword" name="e-mail" placeholder="Password..." required>
               <p class="m-i">Forgot password?</p>   
               <input type="submit" value="Login" class="m-login">
               <p class="m-not">Not a member?  <span class="m-signup_now m-i">Sign Up now</span></p>
+            </form>
+            <form class="m-form-s hidden">
+              <input type="email" id="email" name="fullname" placeholder="E-mail..." required><br>
+              <input type="password" id="pword" name="e-mail" placeholder="Password..." required>                
+              <input type="password" id="pword" name="e-mail" placeholder="Confirm password..." required><br><br>                
+              <input type="submit" value="Sign Up" class="m-login">              
             </form>
           </div>
           </div>

@@ -12,6 +12,10 @@ Global                          ///
   list-style: none;
 }
 
+a:hover {
+  cursor: pointer;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -468,6 +472,11 @@ footer {
   text-align: center;
   border: none;
   margin-top: 2rem;
+  cursor: pointer;
+}
+
+.submit:hover {
+  background: linear-gradient(180deg, #000000 -77.91%, #03ae44 100.04%);
 }
 
 .form input,
@@ -579,6 +588,7 @@ input[type="radio"] {
 }
 
 .m-layout {
+  display: grid;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -586,9 +596,8 @@ input[type="radio"] {
   z-index: 3;
   border-radius: 2rem;
   background-color: #fff;
-  display: grid;
   grid-template-columns: 1.2fr 2.8fr;
-  grid-template-rows: 1fr 3fr;
+  grid-template-rows: 0.8fr 3.2fr;
   padding: 2.5rem;
   width: 50%;
   box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.285);
@@ -607,7 +616,7 @@ input[type="radio"] {
   transition: all 0.5s ease-in-out;
 }
 
-.m-form #email,
+#email,
 #pword {
   font-size: 2rem;
   font-family: "gilroy light";
@@ -641,9 +650,13 @@ input[type="radio"] {
   padding: 1.2rem;
   color: rgb(43, 43, 43);
   border-radius: 1rem;
-  background: #efca81;
+  background: #e7a728;
   margin: 2rem auto 0;
   width: 90%;
   cursor: pointer;
   border: none;
+  transition: background-color 0.5s;
+}
+.m-login:hover {
+  background-color: #d48e02;
 }
