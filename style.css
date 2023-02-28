@@ -1,0 +1,649 @@
+@import url(font.css);
+
+/*/////////////////////////////////
+                                ///  
+Global                          ///
+                                ///
+/////////////////////////////////*/
+
+* {
+  margin: 0px;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+hr {
+  opacity: 0;
+}
+
+.container {
+  max-width: 2000px;
+  width: 75%;
+  margin: 0 auto;
+}
+
+/*/////////////////////////////////
+                                ///  
+Nav BAR                         ///
+                                ///
+/////////////////////////////////*/
+
+.logo {
+  height: 5.5rem;
+  transition: 0.2s ease-in;
+}
+.logo:hover {
+  height: 6rem;
+  padding-left: 5px;
+  filter: drop-shadow(0px 0px 1px rgba(255, 255, 255, 0.434));
+}
+
+.nav {
+  color: #cecece;
+  display: flex;
+  flex-direction: row;
+  padding-left: 5%;
+  padding-right: 5%;
+  justify-content: space-between;
+  align-items: center;
+  height: 10rem;
+}
+
+.sticky {
+  position: fixed;
+  background-color: #162626fa;
+  /* background-color: #3d4556; */
+  right: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.nav_links {
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+}
+
+.nav-pic {
+  height: 3rem;
+}
+
+.nav_btn {
+  font-family: "Buyan Regular", sans-serif;
+  font-weight: 400;
+  font-size: 2.3rem;
+  padding: 10px;
+  transition: all 0.2s ease-in-out;
+  width: 11rem;
+}
+
+.nav_btn:hover {
+  cursor: pointer;
+  padding: 12px;
+  width: 12rem;
+  font-size: 2.6rem;
+  filter: drop-shadow(0 0 0.5px white);
+}
+
+/*/////////////////////////////////
+                                ///  
+Hero section                    ///
+                                ///
+/////////////////////////////////*/
+
+header {
+  background-image: url("pics/Group 112.svg");
+  background-size: cover;
+  background-position: center;
+  max-width: 100vw;
+  height: 95vh;
+  position: relative;
+}
+
+.navSign {
+  text-align: center;
+  align-self: center;
+  color: rgb(161, 31, 31);
+  border-radius: 5rem;
+  width: 15rem;
+  background: rgba(252, 252, 252, 0.584);
+  padding: 10px;
+  transition: 0.3s;
+}
+
+.navSign:hover {
+  padding: 12px;
+  width: 16rem;
+  text-shadow: (0px 0px 10px rgba(255, 0, 0, 0.667));
+}
+
+.hero_text {
+  /* display: block; */
+  position: absolute;
+  top: 40%;
+  height: 270px;
+  margin-top: -50px;
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+
+/* .h1 {
+  font-family: "Buyan";
+  font-size: 3.5rem;
+  color: white;
+  padding-left: 4rem;
+  text-shadow: 0px 3px 15px rgba(161, 31, 31, 0.765);
+} */
+
+.h2 {
+  font-family: "Gilroy ExtraBold";
+  font-size: 14rem;
+  color: rgb(255, 255, 255);
+  /* letter-spacing: 1.5rem; */
+  /* padding: 0.1px 700px; */
+  /* background: linear-gradient(
+    180deg,
+    rgba(118, 221, 184, 0.6) 0%,
+    rgba(29, 49, 49, 0) 100%
+  ); */
+  /* background-clip: content-box; */
+  /* width: 648px; */
+  text-shadow: 0px 3px 15px rgba(161, 31, 31, 0.765);
+  /* 10px 10px 20px rgba(0, 0, 0, 0.765); */
+}
+
+.h3 {
+  font-family: "buyan thin";
+  /* text-align: center; */
+  font-size: 2.1rem;
+  color: white;
+  letter-spacing: 0.5rem;
+  margin-bottom: 4rem;
+  width: 50rem;
+  font-weight: 700;
+  padding-left: 1rem;
+}
+
+.shop-deals {
+  display: block;
+  font-family: "Buyan";
+  font-size: 1.8rem;
+  width: 20rem;
+  padding: 2rem;
+  color: white;
+  border-radius: 5rem;
+  text-decoration: none;
+  background: linear-gradient(169deg, #3ae17a, transparent) #001508;
+  text-align: center;
+  margin-left: 1.5rem;
+  transition: background-color 0.3s;
+  letter-spacing: 0.15rem;
+}
+
+.shop-deals:hover {
+  background-color: #193825;
+  cursor: pointer;
+}
+
+/*/////////////////////////////////
+                                ///  
+STYLING OF BIKE CARDS           ///
+                                ///
+/////////////////////////////////*/
+
+.bikes-section {
+  /* display: block; */
+  background-color: #162626;
+  padding: 1rem 0 5rem 0;
+}
+
+.skewline-bike-start {
+  position: relative;
+}
+.skewline-bike-end {
+  top: -5rem;
+  position: relative;
+}
+
+.skewline-footer {
+  position: relative;
+}
+
+.skewline-bike-end::before {
+  content: "";
+  left: 50%;
+  right: 0;
+  top: -2rem;
+  transform: skewY(174deg);
+  position: absolute;
+  background-color: #efca81;
+  z-index: 1;
+  height: 15rem;
+}
+
+.skewline-bike-end::after {
+  content: "";
+  left: 0;
+  right: 25%;
+  top: -4rem;
+  transform: skewY(4deg);
+  position: absolute;
+  background-color: #efca81;
+  z-index: 1;
+  height: 20rem;
+}
+
+.skewline-bike-start::before {
+  content: "";
+  left: 50%;
+  right: 0;
+  top: -2rem;
+  transform: skewY(174deg);
+  position: absolute;
+  background-color: #162626;
+  z-index: 1;
+  height: 15rem;
+}
+
+.skewline-bike-start::after {
+  content: "";
+  left: 0;
+  right: 25%;
+  top: -4rem;
+  transform: skewY(4deg);
+  position: absolute;
+  background-color: #162626;
+  z-index: 1;
+  height: 20rem;
+}
+.skewline-footer::before {
+  content: "";
+  left: 50%;
+  right: 0;
+  top: -2rem;
+  transform: skewY(174deg);
+  position: absolute;
+  background-color: #3d4556;
+  z-index: 1;
+  height: 15rem;
+}
+
+.skewline-footer::after {
+  content: "";
+  left: 0;
+  right: 25%;
+  top: -4rem;
+  transform: skewY(4deg);
+  position: absolute;
+  background-color: #3d4556;
+  z-index: 1;
+  height: 20rem;
+}
+
+.bikes {
+  margin-top: 17rem;
+  margin-bottom: 25rem;
+  position: relative;
+  z-index: 1;
+}
+
+hr {
+  max-width: 100vw;
+  border: 0.1rem solid #4f4f4f;
+}
+
+.grid-descr,
+.grid-price,
+h4 {
+  color: #000000;
+}
+
+h4 {
+  font-family: "Buyan Bold";
+  font-size: 4rem;
+  letter-spacing: 0.3rem;
+  color: #2d502a;
+  font-weight: 500;
+  /* filter: drop-shadow(5px 5px 4px rgba(240, 169, 155, 0.737)); */
+}
+
+.bike-links {
+  margin-top: 5rem;
+  padding: 4rem;
+  display: grid;
+  grid-template-columns: 1.5fr 2.5fr;
+  grid-template-rows: min-content min-content 1.2fr;
+  background-color: #e4e4e4;
+  border-radius: 2rem;
+  column-gap: 4rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.bike-links:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.grid-descr {
+  grid-column-start: 2;
+  grid-row-start: 2;
+  font-size: 2rem;
+  font-family: Poppins;
+}
+
+.grid-picture {
+  max-width: 100%;
+  grid-column-start: 1;
+  grid-row-start: 2;
+  grid-row-end: span 3;
+  border-radius: 1.5rem;
+}
+
+.grid-price {
+  font-family: Gilroy;
+  font-size: 2rem;
+  font-weight: 600;
+  grid-column-start: 2;
+  grid-row-start: 3;
+  /* width: 14rem; */
+  place-self: end center;
+  border: 2px solid black;
+  border-radius: 5rem;
+  padding: 2rem 6rem;
+  margin-top: 2rem;
+}
+
+.grid-header {
+  position: relative;
+  z-index: 1;
+  color: rgb(255, 255, 255);
+  padding-left: 6rem;
+  font-family: "buyan regular";
+}
+
+.grid-header::before {
+  position: absolute;
+  content: "";
+  height: 4.5rem;
+  background-color: rgba(161, 31, 31, 0.897);
+  width: 16rem;
+  display: block;
+  z-index: -1;
+  transform: skewX(-30deg);
+  left: 3.8rem;
+}
+
+.grid-price .prs-nmbr {
+  font-family: Gilroy ExtraBold;
+  font-size: 2rem;
+}
+
+/*///////////////////////////////////
+                                  ///  
+  Follow us pre footer           ///
+                                  ///
+///////////////////////////////////*/
+
+.follow-us {
+  height: 100rem;
+  background-color: #efca81;
+}
+
+/*///////////////////////////////////
+                                  ///  
+  Footer                          //
+                                  ///
+///////////////////////////////////*/
+
+.link {
+  all: unset;
+}
+
+footer {
+  position: relative;
+  z-index: 2;
+  height: 65rem;
+  background-color: #3d4556;
+  color: #fff;
+}
+
+.header-footer {
+  padding-bottom: 2rem;
+  font-size: 3rem;
+  position: relative;
+}
+
+.header-footer::after {
+  content: "";
+  margin-top: 1.5rem;
+  display: block;
+  border-bottom: 3px solid rgb(255, 255, 255);
+  width: 8rem;
+}
+
+.footer-content {
+  display: flex;
+  height: 100%;
+  justify-content: space-around;
+  font-family: "Gilroy Light";
+  font-size: 2rem;
+  text-decoration: none;
+  /* align-items: start; */
+  padding-top: 10rem;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 1.2rem;
+}
+
+.footer-bottom {
+  background-color: #383838;
+  text-align: center;
+  position: absolute;
+  bottom: 0rem;
+  width: 100%;
+  padding: 0.7rem;
+  font-size: 1.6rem;
+  font-family: buyan regular;
+  letter-spacing: 0.315rem;
+}
+
+.submit {
+  display: block;
+  font-family: "Gilroy";
+  font-size: 1.2rem;
+  width: 10rem;
+  padding: 1rem;
+  color: white;
+  border-radius: 5rem;
+  text-decoration: none;
+  background: linear-gradient(90deg, #000000 -77.91%, #3ae17a 100.04%);
+  text-align: center;
+  border: none;
+  margin-top: 2rem;
+}
+
+.form input,
+textarea {
+  font-size: 1.8rem;
+  font-family: inherit;
+  padding: 1.2rem;
+  border-radius: 1rem;
+  border: none;
+  width: 20rem;
+}
+
+.form #message {
+  height: 10rem;
+  width: 45rem;
+  text-align: start;
+}
+
+/*/////////////////////////////////
+                                ///  
+Modal windows                   ///
+                                ///
+/////////////////////////////////*/
+
+.hidden {
+  display: none;
+}
+
+.m-img {
+  border-radius: 2rem;
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-row-end: span 2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.m-log-sign-switch {
+  place-self: end stretch;
+  grid-column: 2 / 2;
+  grid-row: 1 / 1;
+  text-align: center;
+  padding-bottom: 0;
+}
+
+.lebel {
+  font-family: "Buyan";
+  font-size: 3rem;
+  padding: 2rem;
+  cursor: pointer;
+  color: #0000003f;
+  transition: 0.2s;
+  display: inline-block;
+  padding-bottom: 0;
+}
+
+.lebel:hover {
+  transform: scale(1.08);
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.r1:checked + label {
+  background-color: rgb(161, 31, 31);
+  color: #ffffff;
+}
+
+/* #m-login {
+  justify-self: end;
+} */
+
+/* #m-signup {
+  grid-column-start: 3;
+  grid-row-start: 1;
+  justify-self: start;
+  color: #767676;
+} */
+
+.form_container {
+  /* background-color: #e9e9e9; */
+  padding: 3rem;
+  border-radius: 2rem;
+  grid-row-start: 2;
+  grid-column-start: 2;
+  grid-column-end: span 3;
+  width: 80%;
+  height: 36rem;
+  text-align: center;
+  margin: 2rem auto;
+}
+
+.close-modal {
+  position: absolute;
+  right: 0;
+  margin: 2rem;
+  font-size: 5rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+  transition: 0.2s;
+}
+
+.close-modal:hover {
+  transform: rotate(90deg);
+}
+
+.m-layout {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  border-radius: 2rem;
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 1.2fr 2.8fr;
+  grid-template-rows: 1fr 3fr;
+  padding: 2.5rem;
+  width: 50%;
+  box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.285);
+  /* transition: all 0.5s ease-in-out; */
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.189);
+  backdrop-filter: blur(8px);
+  z-index: 2;
+  transition: all 0.5s ease-in-out;
+}
+
+.m-form #email,
+#pword {
+  font-size: 2rem;
+  font-family: "gilroy light";
+  padding: 1.2rem;
+  border-radius: 1rem;
+  border: 1px solid grey;
+  width: 90%;
+  margin-top: 2rem;
+}
+
+.m-i,
+.m-not {
+  font-size: 1.4rem;
+  font-family: "gilroy light";
+  color: rgba(255, 0, 0, 0.927);
+  margin-top: 1.4rem;
+  cursor: pointer;
+  text-align: start;
+  padding-left: 10%;
+}
+
+.m-not {
+  color: #000000;
+}
+.m-signup_now {
+  padding-left: 0%;
+}
+.m-login {
+  font-family: "Gilroy regular";
+  font-size: 2rem;
+  padding: 1.2rem;
+  color: rgb(43, 43, 43);
+  border-radius: 1rem;
+  background: #efca81;
+  margin: 2rem auto 0;
+  width: 90%;
+  cursor: pointer;
+  border: none;
+}

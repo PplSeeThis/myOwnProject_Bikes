@@ -1,0 +1,40 @@
+@font-face {
+  font-family: "Buyan Regular";
+  src: url(fonts/BuyanRegular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Buyan Bold";
+  src: url(fonts/BuyanBold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Buyan Thin";
+  src: url(fonts/BuyanThin.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Gilroy Light";
+  src: url(fonts/Gilroy-Light.otf) format("truetype");
+}
+
+@font-face {
+  font-family: "Gilroy ExtraBold";
+  src: url(fonts/Gilroy-ExtraBold.otf) format("truetype");
+}
+@font-face {
+  font-family: "Gilroy semibold";
+  src: url(fonts/Gilroy-Semibold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Gilroy regular";
+  src: url(fonts/Gilroy-Semibold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Gilroy bold";
+  src: url(fonts/Gilroy-Semibold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Gilroy Italic";
+  src: url(fonts/Gilroy-RegularItalic.ttf) format("truetype");
+}

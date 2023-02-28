@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="font.css" />
+    <script src="script.js" defer></script>
+    <title>Roar Home</title>
+  </head>
+  <body id="body">
+
+<!-- HERO SECTION -->
+
+    <header class="header" id="header">
+      <nav class="nav">   
+        <img class="logo" src="pics/RoarBikesLogo1.svg" alt="" />
+        <ul class="nav_links">
+         <a class="nav_btn" href="rorbikes.html"><img class="nav-pic" src="pics/clarity_home-line.svg" alt=""></a>
+         <a class="nav_btn bikes--scroll">BIKES</a>
+         <li class="nav_btn about">about us</li> 
+         <!-- <li class="nav_btn navLogin">Login</li> -->
+         <li class="nav_btn navSign" id="sign">Sign up</li>
+         <!-- <li class="nav_btn"> --><!-- <img src="pics/fluent_cart-20-regular.svg" alt="" /> --><!-- </li> -->
+      </nav>
+      <section class="container">
+       <div class="hero_text">
+         <!-- <h1 class="h1">Welcome to </h1> -->
+         <h2 class="h2">Roar Bikes</h2>
+         <h3 class="h3">We create bicycles for people who likes to ride different.</h3>
+         <a class="shop-deals">Shop Deals</a>
+       </div>
+     </section>
+    </header>
+
+<!-- BIKE CARDS -->
+    <div class="skewline-bike-start"></div>
+    <div class="bikes-section">
+      <section class="bikes container">
+      <div class="bike-links">
+        <h4 class="grid-header">Siamese</h4>
+        <p class="grid-descr">Escape the city with Siamese. 
+          Built for off-road trails, jumps and 
+          dirt riding, take your bike on any terrain. Blasting down a 
+          trail on Siamese is awesome. Solid enough for 
+          trail riding with high spec 27,5-inch wheelsets, 
+          and light enough to carry or to fit into the car.
+           Siamese can be pushed to the limit. Let the adventure begin.</p>
+         <img class="grid-picture" src="pics/Siamese.png" alt="Trek bycile on a forest terrain">
+         <p class="grid-price">Store page</p>  
+      </div><div class="bike-links">
+        <h4 class="grid-header">sphynx</h4>
+        <p class="grid-descr">Our Sphynx fixed gear and single speed bicycles are what we’re best known for. Built on a durable steel frame with seat stay rack mounts, eyelet mounts on the fork and cable stops, the Sphynx models are as stylish as they are versatile. Quality components, a flip-flop hub  and Cult x Vans “waffle pattern” grips will keep you comfortable and riding hassle-free for years to come.</p>
+         <img class="grid-picture" src="pics/Sphynx.png" alt="Trek bycile on a forest terrain">
+         <p class="grid-price">Store page </p>  
+      </div><div class="bike-links">
+        <h4 class="grid-header">bengal</h4>
+        <p class="grid-descr">The new Bengal seamlessly blends rugged capabilities and exceptional comfort. With 250w rear motor and 14.5Ah battery, our city e-bike is perfect for city cycling and everything in between. It’s no wonder it’s the best-selling electric city bike in Europe.</p>
+         <img class="grid-picture" src="pics/bengal.png" alt="Trek bycile on a forest terrain">
+         <p class="grid-price">Store page </p>  
+      </div>      
+      <hr class="hr">  
+    </section>
+  </div>
+    <div class="skewline-bike-end"></div>
+    <!-- // BIKE CARDS -->
+
+    <!-- INSTAGRAM FEED -->
+    <section class="follow-us"></section>
+    <!-- // INSTAGRAM FEED -->
+
+    <div class="skewline-footer"></div>
+
+<!-- FOOTER -->
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section foot-links">
+          <h5 class="header-footer">Sitemap</h5>
+          <a class="link" href="rorbikes.html">Home</a>
+          <a>Cart</a>
+          <a>Login</a>
+          <a>Contact</a>
+        </div>
+
+        <div class="footer-section contact-us">
+          <h5 class="header-footer">Contact us</h5>
+          <form class="footer-section form">
+            <input type="text" id="fname" name="fname" placeholder="Full name..." required>
+            <input type="email" id="email" name="email" placeholder="E-mail..." required>
+            <textarea type="text" id="message" name="message" placeholder="Type your message to us..."></textarea>
+            <input class="submit" type="submit" value="Submit">            
+          </form>          
+        </div>
+        
+        <div class="footer-section about">
+          <img class="header-footer logo" src="pics/RoarBikesLogo1.svg" alt="" />
+          <p><img src="pics/phone-twotone.svg" alt=""/>
+          +38 067 105-37-13
+        </p>
+        <p><img src="pics/mail-twotone.svg" alt=""/>
+          Lmao@gmail.com
+        </p><p><img src="pics/location.svg" alt=""/>
+          South Africa, Ruwanda
+        </p>
+      </div>       
+       
+      <div class="footer-bottom">
+        &copy;   all rights reserved | roabikes.com | 2023
+      </div>
+    </footer>
+        <!-- Modal for SIGN UP -->
+       <div class="modal hidden"> 
+        <div class="modal-insides m-layout">
+          <button class="close-modal">&times;</button>
+          <img class="m-img" src="pics/Modal.png" alt="bike gold bridge">
+          <div class="m-log-sign-switch">
+            <input class="r1" id="1" type="radio" name="checker" checked>                    
+            <label class="lebel" id="m-login" for="1">Login</label>  
+            <input class="r1" id="2" type="radio" name="checker">             
+            <label class="lebel" id="m-signup" for="2">Sign Up</label>
+          </div>
+          <div class="form_container">
+            <form class="m-form ">
+              <input type="email" id="email" name="fullname" placeholder="E-mail..." required><br>
+              <input type="password" id="pword" name="e-mail" placeholder="Password..." required>
+              <p class="m-i">Forgot password?</p>   
+              <input type="submit" value="Login" class="m-login">
+              <p class="m-not">Not a member?  <span class="m-signup_now m-i">Sign Up now</span></p>
+            </form>
+          </div>
+          </div>
+          <div class="overlay hidden"></div> 
+        </div>        
+        <!-- //Modal for SIGN UP -->
+  </body>
+</html>
